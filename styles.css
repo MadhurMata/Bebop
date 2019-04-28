@@ -1,0 +1,331 @@
+
+/* Global */
+
+body{
+  color: #808080a1;
+  font-family: 'Roboto', sans-serif;
+  margin 0;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  color: #000000a3;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 10px 0;
+  color: #000000a3;
+}
+
+p{
+  margin: 0; 
+}
+
+img{
+  margin: 0;
+  width: 100%;
+}
+
+
+.top-section{
+  position: relative;
+  display: inline-block;
+}
+
+.top-section-title{
+  text-align: center;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 449px;
+}
+
+.top-section-title hr{
+  background: transparent;
+  border-bottom: 1px solid black;
+  max-width: 170px;
+  margin-top: 16px; 
+}
+
+.top-section-title hr:hover{
+  max-width: 400px;
+}
+
+.top-section-description{
+  text-align: justify;
+  margin: 53px 0;
+}
+
+.middle-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle-section-text{
+  margin: 0 48px 0 44px;
+  max-width: 808px;
+}
+
+
+.bottom-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 53px;
+}
+
+.bottom-section-text{
+  margin: 0 58px 0 81px;
+  max-width: 757px;
+}
+  
+
+/* over 1025px screen */
+
+@media (min-width: 1025px) {
+  main{
+    margin: 53px;
+  }
+
+  h1{
+    font-size: 27px;
+  }
+
+  
+  p{
+    font-size: 20px;
+  }
+
+}
+
+/* 768px to 1024px screen */
+    
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  main{
+    margin: 31px;
+  }
+
+  h1{
+    font-size: 19px;
+  }
+
+  h2{
+    font-size: 13px;
+  }
+
+  p{
+    font-size: 13px;
+  }
+
+  .top-section-description{
+    text-align: justify;
+    margin: 31px 0;
+  }
+
+  .top-section-title hr{
+    background: transparent;
+    border-bottom: 1px solid black;
+    max-width: 120px;
+    margin-top: 16px; 
+  }
+
+  .middle-section-text {
+    margin: 0 30px;
+    max-width: 798px;
+  }
+
+  .bottom-section{
+  margin: 31px;
+  }
+
+  .bottom-section-text{
+    margin: 0 31px 0 45px;
+    max-width: 788px;
+  }
+
+}
+
+/* 321px to 767px screen (IPAD) */
+
+@media (min-width: 321px) and (max-width: 767px) {
+
+  main{
+    margin: 31px;
+  }
+
+  h1{
+    font-size: 14px;
+  }
+
+  h2{
+    font-size: 13px;
+  }
+
+  p{
+    font-size: 13px;
+  }
+
+  .top-section-title{
+    text-align: center;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 449px;
+  }
+
+  .top-section-img img{
+    height: 160px;
+  }
+
+  .top-section-title hr{
+    background: transparent;
+    border-bottom: 0.5px solid black;
+    max-width: 90px;
+  }
+
+  .top-section-description{
+    text-align: justify;
+    margin: 31px 0;
+  }
+
+  .middle-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .middle-section-text{
+    margin: 31px 0;
+  }
+
+  .bottom-section{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .bottom-section-text{
+    margin: 31px 0;
+  }
+
+}
+
+/* 320px screen */
+
+@media (max-width: 320px) {
+
+  main{
+    margin: 31px;
+  }
+
+  h1{
+    font-size: 14px;
+  }
+
+  h2{
+    font-size: 13px;
+    margin: 0 0 10px 0;
+  }
+
+  p{
+    font-size: 13px;
+  }
+
+  img{
+    display: inline-block;
+  }
+
+  .top-section{
+    position: relative;
+    display: inline-block;
+  }
+
+  .top-section-img {
+    width: 100%;
+    height: 257px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .top-section-img img{
+    width: 778px;
+    height: 257px;
+    position: absolute;
+    top: 0px;
+    left: -81px;
+  }
+
+  .top-section-title{
+    text-align: center;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .top-section-title hr{
+    background: transparent;
+    border-bottom: 0.5px solid black;
+    width: 70px;
+  }
+
+  .top-section-description{
+    text-align: justify;
+    display: inline-block;
+    margin: 31px 0;
+  }
+
+  .middle-section{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .middle-section-text{
+    margin: 22px 0 28px;
+  }
+
+  .bottom-section{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .bottom-section-text{
+    margin: 22px 0;
+  }
+
+}
+
+/* Loading animation */
+
+@-webkit-keyframes rotating {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+#preloader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  border: #31a9df 3px solid;
+  border-left-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: rotating 1s linear infinite;
+}
+
+
+
